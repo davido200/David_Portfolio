@@ -320,7 +320,7 @@ export const projects = [
     description:
       "This project focuses on examining patterns, trends, and factors influencing customer spending in order to gain insights into their preferences, purchasing habits, and potential areas for improvement in menu offerings or marketing strategies in a dining establishment.",
     image:
-      "https://cdn.vectorstock.com/i/1000x1000/92/63/consumer-analysis-line-icon-linear-concept-vector-25479263.webp",
+      "https://i.pinimg.com/736x/d5/2d/8f/d52d8f6f59fbc4afab57a322b32a3133--for-sale.jpg",
     tags: ["MSQL Server",],
     category: "Data Analysis",
     github: "https://github.com/davido200/CUSTOMER-BEHAVIOUR-ANALYSIS-SQL-Server-",
