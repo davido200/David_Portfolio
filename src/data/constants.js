@@ -226,7 +226,7 @@ export const experiences = [
     <br />,
     "- Creating reports, dashboards, and visualizations to present the analysed data in a clear and concise manner. Communicating findings to stakeholders, such as hospital administrators, clinicians, or researchers, to support decision-making processes.",
     <br />,
-    " "
+
   ],
     skills: [
       "Data Entry",
