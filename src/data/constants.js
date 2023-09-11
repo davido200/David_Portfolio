@@ -160,19 +160,36 @@ export const experiences = [
     company: "Freelancing",
     date: "Feb 2022 - Present",
     desc: [
-      " - Data Collection & Cleaning: Sourced and prepared raw data from various platforms, ensuring accuracy and reliability in analysis by implementing data cleansing and validation techniques.",
+      " - ",
+      <strong>Data Collection & Cleaning:</strong>,
+      " Sourced and prepared raw data from various platforms, ensuring accuracy and reliability in analysis by implementing data cleansing and validation techniques.",
       <br />,
-      " - Statistical Analysis: Employed statistical methods using tools like Python to interpret data sets, providing actionable insights to clients.",
+      
+      " - ",
+      <strong>Statistical Analysis:</strong>,
+      " Employed statistical methods using tools like Python to interpret data sets, providing actionable insights to clients.",
       <br />,
-      " - Predictive Modeling: Designed and deployed predictive models to forecast industry trends, assisting clients in making informed business decisions.",
+      
+      " - ",
+      <strong>Predictive Modeling:</strong>,
+      " Designed and deployed predictive models to forecast industry trends, assisting clients in making informed business decisions.",
       <br />,
-      " - Visualization & Reporting: Created dynamic and interactive dashboards using Tableau & PowerBI to represent complex data sets in easily digestible formats for client presentations.",
+      
+      " - ",
+      <strong>Visualization & Reporting:</strong>,
+      " Created dynamic and interactive dashboards using Tableau & PowerBI to represent complex data sets in easily digestible formats for client presentations.",
       <br />,
-      " - Data Warehousing : Set up and managed cloud-based data storage solutions such as AWS Redshift, Google BigQuery, ensuring data integrity and ease of access for analysis tasks.",
+      
+      " - ",
+      <strong>Data Warehousing:</strong>,
+      " Set up and managed cloud-based data storage solutions such as AWS Redshift, Google BigQuery, ensuring data integrity and ease of access for analysis tasks.",
       <br />,
-      " - Continuous Learning: Stayed abreast with the latest trends and tools in data science by completing courses in Data Sciences and attending webinar’s and workshops."
-
-    ],  
+      
+      " - ",
+      <strong>Continuous Learning:</strong>,
+      " Stayed abreast with the latest trends and tools in data science by completing courses in Data Sciences and attending webinars and workshops."
+    ],
+    
     
     skills: [
       "Python",
@@ -191,18 +208,37 @@ export const experiences = [
     role: "IT Support",
     company: "Leinaile Cyber Cafe",
     date: "June 2022 - Jan 2023",
-    desc: ["- Network Maintenance and Optimization : Regularly monitor and maintain the cyber cafe's network infrastructure to ensure optimal performance. Address connectivity issues, set up firewalls, and optimize for speed and security. Implement regular updates and patches to both software and network infrastructure to ensure robust security against potential threats.",
-    <br />,
-    "- Software Management : Responsible for the installation, configuration, and updating of software applications used in the cafe. Regularly review software licenses, keep track of updates, and apply patches to protect against vulnerabilities and optimize system performance.",
-    <br />,
-    "- Setting Up and Configuring Systems : Handle the installation and configuration of new computer systems and other IT peripherals. Ensure all systems and software are set up in accordance with the cafe's needs and specifications.",
-    <br />,
-    "- Database Management and Data Entry : Oversee the cafe's database systems, ensuring customer data and transactions are entered accurately and securely. Run regular backups to prevent data loss and restore data when necessary.",
-    <br />,
-    "- Hardware Diagnostics and Repairs : Diagnose and repair hardware issues by troubleshooting problems, replacing faulty components, and ensuring systems run efficiently. ",
-    <br />,
-    "- End-User Assistance and Training : Provide guidance and training to cafe users on both hardware and software usage. Train users on new software installations, updates, and best practices, ensuring they are comfortable and efficient in their daily tasks.",
-  ],
+    desc: [
+      " - ",
+      <strong>Network Maintenance and Optimization:</strong>,
+      " Regularly monitor and maintain the cyber cafe's network infrastructure to ensure optimal performance. Address connectivity issues, set up firewalls, and optimize for speed and security. Implement regular updates and patches to both software and network infrastructure to ensure robust security against potential threats.",
+      <br />,
+      
+      " - ",
+      <strong>Software Management:</strong>,
+      " Responsible for the installation, configuration, and updating of software applications used in the cafe. Regularly review software licenses, keep track of updates, and apply patches to protect against vulnerabilities and optimize system performance.",
+      <br />,
+      
+      " - ",
+      <strong>Setting Up and Configuring Systems:</strong>,
+      " Handle the installation and configuration of new computer systems and other IT peripherals. Ensure all systems and software are set up in accordance with the cafe's needs and specifications.",
+      <br />,
+      
+      " - ",
+      <strong>Database Management and Data Entry:</strong>,
+      " Oversee the cafe's database systems, ensuring customer data and transactions are entered accurately and securely. Run regular backups to prevent data loss and restore data when necessary.",
+      <br />,
+      
+      " - ",
+      <strong>Hardware Diagnostics and Repairs:</strong>,
+      " Diagnose and repair hardware issues by troubleshooting problems, replacing faulty components, and ensuring systems run efficiently.",
+      <br />,
+      
+      " - ",
+      <strong>End-User Assistance and Training:</strong>,
+      " Provide guidance and training to cafe users on both hardware and software usage. Train users on new software installations, updates, and best practices, ensuring they are comfortable and efficient in their daily tasks.",
+    ],
+    
     skills: [
       "Networking",
       "Systems Installation",
@@ -218,16 +254,28 @@ export const experiences = [
     role: "Data Analyst",
     company: "Kenneth Matiba Hospital - Murang'a County Government",
     date: "Apr 2019 - Sep 2021",
-    desc: ["-	Data Collection and Extraction: Gathering relevant data from various sources, such as electronic health records (EHR), patient databases, or billing systems. Extracting the necessary information for analysis, ensuring data integrity and accuracy.",
-    <br />,
-    "- Data Cleaning and Preparation: Reviewing and cleansing data to identify and correct any inconsistencies, errors, or missing values. Organizing and structuring the data in a format suitable for analysis.",
-    <br />,
-    "- Data Analysis and Interpretation: Applying statistical techniques and analytical methods to identify patterns, trends, and correlations in the data. Conducting data mining, predictive modelling, or statistical analysis to derive meaningful insights and actionable recommendations.",
-    <br />,
-    "- Creating reports, dashboards, and visualizations to present the analysed data in a clear and concise manner. Communicating findings to stakeholders, such as hospital administrators, clinicians, or researchers, to support decision-making processes.",
-    <br />,
-
-  ],
+    desc: [
+      " - ",
+      <strong>Data Collection and Extraction:</strong>,
+      " Gathering relevant data from various sources, such as electronic health records (EHR), patient databases, or billing systems. Extracting the necessary information for analysis, ensuring data integrity and accuracy.",
+      <br />,
+      
+      " - ",
+      <strong>Data Cleaning and Preparation:</strong>,
+      " Reviewing and cleansing data to identify and correct any inconsistencies, errors, or missing values. Organizing and structuring the data in a format suitable for analysis.",
+      <br />,
+      
+      " - ",
+      <strong>Data Analysis and Interpretation:</strong>,
+      " Applying statistical techniques and analytical methods to identify patterns, trends, and correlations in the data. Conducting data mining, predictive modelling, or statistical analysis to derive meaningful insights and actionable recommendations.",
+      <br />,
+      
+      " - ",
+      <strong>Creating reports, dashboards, and visualizations:</strong>,
+      " to present the analysed data in a clear and concise manner. Communicating findings to stakeholders, such as hospital administrators, clinicians, or researchers, to support decision-making processes.",
+      <br />
+    ],
+    
     skills: [
       "Data Entry",
       "Data Clearning",
