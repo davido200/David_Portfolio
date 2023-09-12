@@ -245,6 +245,13 @@ export const experiences = [
       "Data entry",
       "Hardaware Troubleshooting",
       "User Training",
+      "Technical Proficiency: Windows, Linux ",
+      "major software applications: Microsoft Office, Google Workspace",
+      "Remote Troubleshooting: (e.g., TeamViewer, Remote Desktop) ",
+      "Help Desk Software: e.g., Zendesk",
+      "Scripting and Automation: Python",
+      "User Account Management",
+      "Security Awareness"
       
     ],
   },
