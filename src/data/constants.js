@@ -417,16 +417,16 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Whatsapp Clone",
-    date: "Jul 2023",
+    title: "FIFA21 DATASET CLEANING (Python) ",
+    date: "Aug 2023 - Aug 2023",
     description:
-      "A WhatsApp clone made with React JS, Firebase, and Material UI. It has Phone Authentication, Real-time Database. It has a chat room where users can chat with each other. It has a sidebar where users can see all the chat rooms and can create a new chat room. It has a login page where users can log in with their Google account.",
+      "In the FIFA21 dataset cleaning project, by leveraging libraries like Pandas, I removed duplicate entries, handled missing values, standardized formats, and resolved inconsistencies in the dataset. Through careful data cleaning techniques, I ensured the accuracy, consistency, and quality of the FIFA21 dataset, making it ready for analysis and providing a reliable foundation for further insights and modeling tasks.",
     image:
-      "https://firebasestorage.googleapis.com/v0/b/whatsapp-clone-rishav.appspot.com/o/Screenshot%20(151).png?alt=media&token=48391593-1ef0-4a8c-a92a-eb82bdf38e89",
-    tags: ["React Js", "Firebase", "Firestore", "Node JS"],
-    category: "web app",
-    github: "https://github.com/davido200?tab=repositories",
-    webapp: "https://github.com/davido200?tab=repositories",
+      "https://media.contentapi.ea.com/content/dam/ea/fifa/fifa-21/global_assets/common/featured_images/fifa21-grid-tile-generic-tips-tricks-16x9.png.adapt.crop16x9.575p.png",
+    tags: ["Panda", "Numpy", "Jupyter", "Python"],
+    category: "Python Projects",
+    github: "https://github.com/davido200/FIFA21_DATASET_CLEANING",
+    webapp: "https://github.com/davido200/FIFA21_DATASET_CLEANING",
   },
   {
     id: 5,
@@ -437,7 +437,7 @@ export const projects = [
     image:
       "https://camo.githubusercontent.com/a328255ad96f861f57d25096d28018ab2656c689a1456b0d145764009bed2d1a/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f746f646f2d6170702d63386331392e61707073706f742e636f6d2f6f2f53637265656e73686f74253230283938292e706e673f616c743d6d6564696126746f6b656e3d33643335646366322d626666322d343730382d393031632d343232383866383332386633",
     tags: ["React Js", "Local Storage", "AWS Auth", "Node JS"],
-    category: "web app",
+    category: "Python",
     github: "https://github.com/davido200?tab=repositories",
     webapp: "https://github.com/davido200?tab=repositories",
   }, 
