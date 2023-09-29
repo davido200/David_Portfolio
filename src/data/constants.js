@@ -259,7 +259,7 @@ export const experiences = [
     id: 2,
     img: "https://media.licdn.com/dms/image/C510BAQGSObrO0QPlMQ/company-logo_200_200/0/1555704980721?e=1692835200&v=beta&t=FjOWcUVVNzqFbTmmp0iXQkv5keBQC5lxIQ7K6rmMSMQ",
     role: "Data Analyst",
-    company: "Kenneth Matiba Hospital - Murang'a County Government",
+    company: "Murang'a County Health",
     date: "Apr 2019 - Sep 2021",
     desc: [
       " - ",
