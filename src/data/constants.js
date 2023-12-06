@@ -432,35 +432,34 @@ export const education = [
 export const projects = [
   {
     id: 9,
-    title: "EMPLOYEES SURVEY DASHBOARD",
-    date: "Jan 2023 - Jan 2023",
+    title: "Penda Health Centre (Assessment Analysis)",
+    date: "Dec 2023",
     description:
-      "This report presents the results of a data analysis on a professional survey that collected information from 630 employees in the software industry. The survey aimed to explore the following aspects: <b>Average salary by job title,Average age of employees,Employees who are happy with work,Employees who happy with salary,Average salary by gender,Favorite programming language used in work",
+      "This project undertakes a comprehensive analysis of data sourced from Penda Health Centre to extract valuable insights, shedding light on the medical centers' performance, patient interactions, and financial dynamics",
     image:
-      "https://user-images.githubusercontent.com/70089562/245777309-650f2c65-86ab-4c86-b39a-7358bf7ba325.PNG",
+      "https://blogimages.softwaresuggest.com/blog/wp-content/uploads/2020/01/21143416/8-Types-of-Health-Information-Technology-Healthcare-Software-System-1024x554.png",
     tags: [
-      "MYSQL",
-      "Tableau",
       
+      "Jupyter", "Pandas", "Analysis",
     ],
     category: "Data Analysis",
-    github: "https://github.com/davido200/Data-professional-survey",
-    webapp: "https://github.com/davido200/Data-professional-survey",
+    github: "https://github.com/davido200/Penda-Health-Centre-Analysis",
+    webapp: "https://github.com/davido200/Penda-Health-Centre-Analysis",
   },
   {
-    id: 0,
-    title: "HUMAN RESOURCE DASHBOARD",
-    date: "Apr 2023 - April 2023",
+    id: 10,
+    title: "CUSTOMER BEHAVIOUR ANALYSIS",
+    date: "Sep 2023 -  2023",
     description:
-      "The purpose of this report is to explore the HR data and identify the number of employee attrition.Employee attrition is a costly problem for organizations, as it affects productivity, morale, and customer satisfaction.",
+      "This project focuses on examining patterns, trends, and factors influencing customer spending in order to gain insights into their preferences, purchasing habits, and potential areas for improvement in menu offerings or marketing strategies in a dining establishment.",
     image:
-      "https://user-images.githubusercontent.com/70089562/245414349-915ff367-c9bf-43ef-be79-667431a896a4.PNG",
-    tags: ["Power BI", "MYSQL", "", ""],
+      "https://i.pinimg.com/736x/d5/2d/8f/d52d8f6f59fbc4afab57a322b32a3133--for-sale.jpg",
+    tags: ["MSQL Server",],
     category: "Data Analysis",
-    github: "https://github.com/davido200/HR-BI",
-    webapp: "https://github.com/davido200/HR-BI",
-    
+    github: "https://github.com/davido200/CUSTOMER-BEHAVIOUR-ANALYSIS-SQL-Server-",
+    webapp: "https://github.com/davido200/CUSTOMER-BEHAVIOUR-ANALYSIS-SQL-Server-",
   },
+  
   {
     id: 1,
     title: "Call-Center-Dashboard",
@@ -473,7 +472,7 @@ export const projects = [
       "EXCEL",
       
     ],
-    category: "Data Analysis",
+    category: "Data Visualization",
     github: "https://github.com/davido200/Call-Center-Dashboard-Excel",
     webapp: "https://github.com/davido200/Call-Center-Dashboard-Excel",
   },
@@ -505,17 +504,18 @@ export const projects = [
     webapp: "https://github.com/davido200/Book_Scraping",
   },
   {
-    id: 10,
-    title: "CUSTOMER BEHAVIOUR ANALYSIS",
-    date: "Jun 2023 - Jul 2023",
+    id: 0,
+    title: "HUMAN RESOURCE DASHBOARD",
+    date: "Apr 2023 - April 2023",
     description:
-      "This project focuses on examining patterns, trends, and factors influencing customer spending in order to gain insights into their preferences, purchasing habits, and potential areas for improvement in menu offerings or marketing strategies in a dining establishment.",
+      "The purpose of this report is to explore the HR data and identify the number of employee attrition.Employee attrition is a costly problem for organizations, as it affects productivity, morale, and customer satisfaction.",
     image:
-      "https://i.pinimg.com/736x/d5/2d/8f/d52d8f6f59fbc4afab57a322b32a3133--for-sale.jpg",
-    tags: ["MSQL Server",],
+      "https://user-images.githubusercontent.com/70089562/245414349-915ff367-c9bf-43ef-be79-667431a896a4.PNG",
+    tags: ["Power BI", "MYSQL", "", ""],
     category: "Data Analysis",
-    github: "https://github.com/davido200/CUSTOMER-BEHAVIOUR-ANALYSIS-SQL-Server-",
-    webapp: "https://github.com/davido200/CUSTOMER-BEHAVIOUR-ANALYSIS-SQL-Server-",
+    github: "https://github.com/davido200/HR-BI",
+    webapp: "https://github.com/davido200/HR-BI",
+    
   },
   {
     id: 4,
@@ -526,22 +526,23 @@ export const projects = [
     image:
       "https://media.contentapi.ea.com/content/dam/ea/fifa/fifa-21/global_assets/common/featured_images/fifa21-grid-tile-generic-tips-tricks-16x9.png.adapt.crop16x9.575p.png",
     tags: ["Panda", "Numpy", "Jupyter", "Python"],
-    category: "Python Projects",
+    category: "Data Analysis",
     github: "https://github.com/davido200/FIFA21_DATASET_CLEANING",
     webapp: "https://github.com/davido200/FIFA21_DATASET_CLEANING",
   },
   {
     id: 5,
-    title: "Todo Web App",
-    date: "Jun 2023",
+    title: "EMPLOYEES SURVEY DASHBOARD",
+    date: " Jan 2023 - Jan 2023",
     description:
-      " A Todo Web App made with React JS, Redux, and Material UI. It has a login page where users can log in with their Google account. It has a sidebar where users can see all the tasks and can create a new task. It has a calendar where users can see all the tasks on a particular date. It has a search bar where users can search for a particular task.",
+      " This report presents the results of a data analysis on a professional survey that collected information from 630 employees in the software industry. The survey aimed to explore the following aspects: <b>Average salary by job title,Average age of employees,Employees who are happy with work,Employees who happy with salary,Average salary by gender,Favorite programming language used in work.",
     image:
-      "https://camo.githubusercontent.com/a328255ad96f861f57d25096d28018ab2656c689a1456b0d145764009bed2d1a/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f746f646f2d6170702d63386331392e61707073706f742e636f6d2f6f2f53637265656e73686f74253230283938292e706e673f616c743d6d6564696126746f6b656e3d33643335646366322d626666322d343730382d393031632d343232383866383332386633",
-    tags: ["React Js", "Local Storage", "AWS Auth", "Node JS"],
+      "https://user-images.githubusercontent.com/70089562/245777309-650f2c65-86ab-4c86-b39a-7358bf7ba325.PNG",
+    tags: ["MYSQL",
+    "Tableau",],
     category: "Python",
-    github: "https://github.com/davido200?tab=repositories",
-    webapp: "https://github.com/davido200?tab=repositories",
+    github: "https://github.com/davido200/Data-professional-survey",
+    webapp: "https://github.com/davido200/Data-professional-survey",
   }, 
 
 ];
