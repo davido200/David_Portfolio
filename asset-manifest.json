@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/davido200/portfolio/static/css/main.bf538fe7.css",
+    "main.js": "/davido200/portfolio/static/js/main.a74297e4.js",
+    "static/media/HeroImage.jpg": "/davido200/portfolio/static/media/HeroImage.7c949e9aefe454a37a3a.jpg",
+    "index.html": "/davido200/portfolio/index.html",
+    "main.bf538fe7.css.map": "/davido200/portfolio/static/css/main.bf538fe7.css.map",
+    "main.a74297e4.js.map": "/davido200/portfolio/static/js/main.a74297e4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf538fe7.css",
+    "static/js/main.a74297e4.js"
+  ]
+}
