@@ -8,7 +8,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/davido200",
   resume:
-  "https://drive.google.com/file/d/1Pyf835xl-S8pzPdeh4VkHTKInkWIM7Ns/view?usp=sharing",
+  "https://drive.google.com/file/d/1JAyjvP_FD3cOUFLQXsL1pe6R6INTKhck/view?usp=sharing",
   linkedin: "www.linkedin.com/in/davidkemboi",
   twitter: "https://twitter.com/@daviskyms2",
   insta: "https://www.instagram.com//",
