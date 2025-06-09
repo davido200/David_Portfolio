@@ -8,7 +8,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/davido200",
   resume:
-  "https://drive.google.com/file/d/1JAyjvP_FD3cOUFLQXsL1pe6R6INTKhck/view?usp=sharing",
+  "https://drive.google.com/file/d/1xzuuNBtKR5q8FbBRBIrIQea5Yis_chUC/view?usp=sharing",
   linkedin: "www.linkedin.com/in/davidkemboi",
   twitter: "https://twitter.com/@daviskyms2",
   insta: "https://www.instagram.com//",
@@ -216,10 +216,63 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
+    img: "data:image/jpeg;base64,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",
+    role: "Data Analyst",
+    company: "Freelancing",
+    date: "May 2025 - Present",
+    desc: [
+      " •  ",
+      <strong>Data Visualization:</strong>,
+      " •	 Designed and developed custom data visualizations and interactive dashboards using Power BI, Tableau, and Excel to support data-driven decision-making for clients across various industries.",
+      <br />,
+      <br />,
+      " •  ",
+      <strong>Data preprocessing:</strong>,
+      " • Conducted end-to-end data analysis projects, including data extraction, cleaning, transformation, and visualization, using tools such as SQL, Python (Pandas, NumPy), and Power Query.",
+      <br />,
+      <br />,
+      
+      " •  ",
+      <strong>EDA:</strong>,
+      " •	Translated complex datasets into actionable insights by applying exploratory data analysis (EDA), statistical techniques, and data storytelling principles.",
+      <br />,
+      <br />,
+      
+      " •  ",
+      <strong>Power BI:</strong>,
+      " Leveraged DAX and Power BI to develop calculated measures and KPIs, enhancing the accuracy and interactivity of business intelligence dashboards.",
+      <br />,
+      <br />,
+      
+      " •  ",
+      <strong>A/B Testing:</strong>,
+      "  Executed A/B testing and statistical analyses to assess business hypotheses, optimize campaigns, and improve decision-making",
+      <br />,
+      <br />,
+      
+      " •  ",
+      <strong>SQL</strong>,
+      " Utilized SQL to query relational databases, extract relevant datasets, and support ad hoc analysis and reporting needs..",
+    ],    
+    
+    
+    skills: [
+      "Data Visualization ",
+      "Data Collection ",
+      "Data preprocessing",
+      "DAX,",
+      "Report",
+      "SQL",
+      "A/B Testing",
+    ],
+    doc: "",
+  },
+  {
+    id: 0,
     img: "data:image/png;base64,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",
     role: "Data Analyst",
     company: "AMFREF",
-    date: "Nov 2024 - Present",
+    date: "Nov 2024 - May 2025",
     desc: [
       " •  ",
       <strong>Quality Assurance:</strong>,
