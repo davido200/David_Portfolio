@@ -118,6 +118,21 @@ const ContactButton = styled.input`
   color: ${({ theme }) => theme.text_primary};
   font-size: 18px;
   font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out !important;
+  
+  &:disabled {
+    background: ${({ theme }) => theme.text_secondary + 50};
+    cursor: not-allowed;
+    opacity: 0.6;
+    filter:  grayscale(100%);
+  }
+
+  &:hover:not(:disabled) {
+    transform: scale(1.05);
+    transition: all 0.4s ease-in-out;
+    filter: brightness(1);
+  }
 `
 
 
@@ -126,20 +141,36 @@ const Contact = () => {
 
   //hooks
   const [open, setOpen] = React.useState(false);
+  const [formValues, setFormValues] = React.useState({
+    from_email: '',
+    from_name: '',
+    subject: '',
+    message: ''
+  });
+
   const form = useRef();
+
+  const handleChange = (e) => {
+    setFormValues({ ...formValues, [e.target.name]: e.target.value });
+  };
+
+  const isFormValid = Object.values(formValues).every(value => value.trim() !== '');
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!isFormValid) return;
+
+    console.log("Form submitting...");
     emailjs.sendForm('service_tox7kqs', 'template_nv7k7mj', form.current, 'SybVGsYS52j2TfLbi')
       .then((result) => {
+        console.log("Email sent result:", result.text);
         setOpen(true);
         form.current.reset();
+        setFormValues({ from_email: '', from_name: '', subject: '', message: '' }); // Reset state
       }, (error) => {
-        console.log(error.text);
+        console.error("Email send error:", error.text);
       });
   }
-
-
 
   return (
     <Container>
@@ -148,16 +179,45 @@ const Contact = () => {
         <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInput placeholder="Subject" name="subject" />
-          <ContactInputMessage placeholder="Message" rows="4" name="message" />
-          <ContactButton type="submit" value="Send" />
+          <ContactInput
+            placeholder="Your Email"
+            name="from_email"
+            value={formValues.from_email}
+            onChange={handleChange}
+            required
+          />
+          <ContactInput
+            placeholder="Your Name"
+            name="from_name"
+            value={formValues.from_name}
+            onChange={handleChange}
+            required
+          />
+          <ContactInput
+            placeholder="Subject"
+            name="subject"
+            value={formValues.subject}
+            onChange={handleChange}
+            required
+          />
+          <ContactInputMessage
+            placeholder="Message"
+            rows="4"
+            name="message"
+            value={formValues.message}
+            onChange={handleChange}
+            required
+          />
+          <ContactButton
+            type="submit"
+            value="Send"
+            disabled={!isFormValid}
+          />
         </ContactForm>
         <Snackbar
           open={open}
           autoHideDuration={6000}
-          onClose={()=>setOpen(false)}
+          onClose={() => setOpen(false)}
           message="Email sent successfully!"
           severity="success"
         />
