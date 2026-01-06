@@ -161,7 +161,7 @@ const Contact = () => {
     if (!isFormValid) return;
 
     console.log("Form submitting...");
-    emailjs.sendForm('service_tox7kqs', 'template_nv7k7mj', form.current, 'SybVGsYS52j2TfLbi')
+    emailjs.sendForm('service_ihhvxfs', 'template_a60y47b', form.current, 'qNB2CYXxvKvC2fNvT')
       .then((result) => {
         console.log("Email sent result:", result.text);
         setOpen(true);
