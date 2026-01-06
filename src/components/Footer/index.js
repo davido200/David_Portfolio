@@ -103,7 +103,7 @@ function Footer() {
           <SocialMediaIcon href={Bio.insta} target="display"><InstagramIcon /></SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>
-          &copy; 2025 Kemboi K David. All rights reserved.
+          &copy; {new Date().getFullYear()} Kemboi K David. All rights reserved.
         </Copyright>
 
       </FooterWrapper>
