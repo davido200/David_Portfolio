@@ -5,10 +5,33 @@ import { FaBars } from 'react-icons/fa';
 import { Bio } from '../../data/constants';
 import { Close, CloseRounded } from '@mui/icons-material';
 import { useTheme } from 'styled-components';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
-  const theme = useTheme()
+  const theme = useTheme();
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleNavClick = (e, id) => {
+    e.preventDefault();
+    if (location.pathname === '/') {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      navigate('/');
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+    setIsOpen(false);
+  }
+
   return (
     <Nav>
       <NavbarContainer>
@@ -23,11 +46,11 @@ const Navbar = () => {
           }} />
         </MobileIcon>
         <NavItems>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href='#skills'>Skills</NavLink>
-          <NavLink href='#experience'>Experience</NavLink>
-          <NavLink href='#projects'>Projects</NavLink>
-          <NavLink href='#education'>Education</NavLink>
+          <NavLink href="#about" onClick={(e) => handleNavClick(e, 'about')}>About</NavLink>
+          <NavLink href='#skills' onClick={(e) => handleNavClick(e, 'skills')}>Skills</NavLink>
+          <NavLink href='#experience' onClick={(e) => handleNavClick(e, 'experience')}>Experience</NavLink>
+          <NavLink href='#projects' onClick={(e) => handleNavClick(e, 'projects')}>Projects</NavLink>
+          <NavLink href='#education' onClick={(e) => handleNavClick(e, 'education')}>Education</NavLink>
         </NavItems>
         <ButtonContainer>
           <GitHubButton href={Bio.github} target="_blank">Github Profile</GitHubButton>
@@ -35,22 +58,12 @@ const Navbar = () => {
         {
           isOpen &&
           <MobileMenu isOpen={isOpen}>
-            <MobileLink href="#about" onClick={() => {
-              setIsOpen(!isOpen)
-            }}>About</MobileLink>
-            <MobileLink href='#skills' onClick={() => {
-              setIsOpen(!isOpen)
-            }}>Skills</MobileLink>
-            <MobileLink href='#experience' onClick={() => {
-              setIsOpen(!isOpen)
-            }}>Experience</MobileLink>
-            <MobileLink href='#projects' onClick={() => {
-              setIsOpen(!isOpen)
-            }}>Projects</MobileLink>
-            <MobileLink href='#education' onClick={() => {
-              setIsOpen(!isOpen)
-            }}>Education</MobileLink>
-            <GitHubButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} href={Bio.github} target="_blank">Github Profile</GitHubButton>
+            <MobileLink href="#about" onClick={(e) => handleNavClick(e, 'about')}>About</MobileLink>
+            <MobileLink href='#skills' onClick={(e) => handleNavClick(e, 'skills')}>Skills</MobileLink>
+            <MobileLink href='#experience' onClick={(e) => handleNavClick(e, 'experience')}>Experience</MobileLink>
+            <MobileLink href='#projects' onClick={(e) => handleNavClick(e, 'projects')}>Projects</MobileLink>
+            <MobileLink href='#education' onClick={(e) => handleNavClick(e, 'education')}>Education</MobileLink>
+            <GitHubButton style={{ padding: '10px 16px', background: `${theme.primary}`, color: 'white', width: 'max-content' }} href={Bio.github} target="_blank">Github Profile</GitHubButton>
           </MobileMenu>
         }
       </NavbarContainer>

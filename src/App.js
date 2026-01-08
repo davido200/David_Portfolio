@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { darkTheme, lightTheme } from './utils/Themes.js'
 import Navbar from "./components/Navbar";
 import './App.css';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import HeroSection from "./components/HeroSection";
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -14,6 +14,7 @@ import Experience from "./components/Experience";
 import Education from "./components/Education";
 import ProjectDetails from "./components/ProjectDetails";
 import styled from "styled-components";
+import Resume from "./components/Resume";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -35,20 +36,27 @@ function App() {
       <Router >
         <Navbar />
         <Body>
-          <HeroSection />
-          <Wrapper>
-            <Skills />
-            <Experience />
-          </Wrapper>
-          <Projects openModal={openModal} setOpenModal={setOpenModal} />
-          <Wrapper>
-            <Education />
-            <Contact />
-          </Wrapper>
-          <Footer />
-          {openModal.state &&
-            <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
-          }
+          <Routes>
+            <Route path="/" element={
+              <>
+                <HeroSection />
+                <Wrapper>
+                  <Skills />
+                  <Experience />
+                </Wrapper>
+                <Projects openModal={openModal} setOpenModal={setOpenModal} />
+                <Wrapper>
+                  <Education />
+                  <Contact />
+                </Wrapper>
+                <Footer />
+                {openModal.state &&
+                  <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
+                }
+              </>
+            } />
+            <Route path="/resume" element={<Resume />} />
+          </Routes>
         </Body>
       </Router>
     </ThemeProvider>
