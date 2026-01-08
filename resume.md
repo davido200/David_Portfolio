@@ -1,8 +1,8 @@
 
 # KEMBOI K. DAVID
-## Data Analyst | Business Intelligence Analyst | Cloud Data Analyst
+## Data Analyst | Business Analyst | Cloud Data Analyst
 
-📍 Milimani, Nakuru, Kenya  
+📍 Westland, Nairobi  
 📞 +254 724 006 182  
 📧 Dkemboi888@gmail.com  
 🔗 [LinkedIn](https://www.linkedin.com/in/davidkemboi)  

@@ -18,7 +18,8 @@ import {
     SkillWrap,
     Skill,
     DownloadButton,
-    HeaderRow
+    HeaderRow,
+    Header
 } from './ResumeStyle';
 
 const Resume = () => {
@@ -29,17 +30,15 @@ const Resume = () => {
                 <SubTitle>My professional journey and skills</SubTitle>
 
                 <ResumeContainer>
-                    <HeaderRow>
-                        <div>
-                            <ItemTitle>KEMBOI K. DAVID</ItemTitle>
-                            <ItemSubtitle>Data Analyst | Business Intelligence Analyst | Cloud Data Analyst</ItemSubtitle>
-                            <ItemContent>📍 Milimani, Nakuru, Kenya | 📞 +254 724 006 182 | 📧 Dkemboi888@gmail.com</ItemContent>
-                            <ItemContent>
-                                <a href="https://www.linkedin.com/in/davidkemboi" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>🔗 LinkedIn</a> |
-                                <a href="https://davido200.github.io/David_Portfolio/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}> 🌐 Portfolio</a>
-                            </ItemContent>
-                        </div>
-                    </HeaderRow>
+                    <Header>
+                        <ItemTitle>KEMBOI K. DAVID</ItemTitle>
+                        <ItemSubtitle>Data Analyst | Business Analyst | Cloud Data Analyst</ItemSubtitle>
+                        <ItemContent>📍 Westland, Nairobi | 📞 +254 724 006 182 | 📧 Dkemboi888@gmail.com</ItemContent>
+                        <ItemContent>
+                            <a href="https://www.linkedin.com/in/davidkemboi" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>🔗 LinkedIn</a> |
+                            <a href="https://davido200.github.io/David_Portfolio/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}> 🌐 Portfolio</a>
+                        </ItemContent>
+                    </Header>
 
                     <Section>
                         <SectionTitle>Professional Profile</SectionTitle>
@@ -74,6 +73,23 @@ const Resume = () => {
 
                     <Section>
                         <SectionTitle>Professional Experience</SectionTitle>
+
+                        <Item>
+                            <HeaderRow>
+                                <ItemTitle>Sportserver — Junior Business Analyst</ItemTitle>
+                                <ItemSubtitle>Nairobi County | July 2025 – Present</ItemSubtitle>
+                            </HeaderRow>
+                            <List>
+                                <ListItem>Collaborate with Marketing, Business Intelligence, QA, Operations, and Product teams to gather, analyze, and document business and operational requirements across sportsbook platforms.</ListItem>
+                                <ListItem>Analyze large-scale games and player data using advanced SQL queries and BI tools (e.g., Looker Studio) to build dashboards tracking key KPIs such as Turnover, Gross Gaming Revenue (GGR), Net Revenue, Bonuses, and Player Activity.</ListItem>
+                                <ListItem>Translate complex analytical findings into clear, actionable insights for non-technical stakeholders through reports, dashboards, and presentations, enabling data-driven decision-making in sportsbook operations.</ListItem>
+                                <ListItem>Extract data from proprietary back-office and sportsbook platforms, applying data cleansing and transformation techniques including deduplication, null handling, schema normalization, and standardization.</ListItem>
+                                <ListItem>Conduct regular data quality audits on reporting outputs, identifying and resolving discrepancies in betting data (e.g., stakes, wins, losses, bonuses) to maintain high data accuracy and regulatory compliance.</ListItem>
+                                <ListItem>Work closely with QA teams to validate data consistency between front-end sportsbook systems and back-office reports, ensuring reliable KPI reporting for internal and external stakeholders.</ListItem>
+                                <ListItem>Document business processes, data definitions, KPIs, and reporting logic to improve transparency, consistency, and knowledge sharing across analytics and operations teams.</ListItem>
+                                <ListItem>Deliver ad-hoc analyses related to sportsbook performance, regulatory reporting, and operational investigations, providing timely insights under tight deadlines.</ListItem>
+                            </List>
+                        </Item>
 
                         <Item>
                             <HeaderRow>

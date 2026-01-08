@@ -199,3 +199,12 @@ export const HeaderRow = styled.div`
     align-items: center;
     width: 100%;
 `;
+
+export const Header = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+`;
