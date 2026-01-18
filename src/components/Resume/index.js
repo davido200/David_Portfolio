@@ -1,181 +1,169 @@
-import React from 'react';
 
-import { Bio } from '../../data/constants';
-import {
-    Container,
-    Wrapper,
-    Title,
-    SubTitle,
-    ResumeContainer,
-    Section,
-    SectionTitle,
-    Item,
-    ItemTitle,
-    ItemSubtitle,
-    ItemContent,
-    List,
-    ListItem,
-    SkillWrap,
-    Skill,
-    DownloadButton,
-    HeaderRow,
-    Header
-} from './ResumeStyle';
+import React from "react";
+import styled from "styled-components";
+import { experiences, education } from "../../data/constants";
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  @media (max-width: 960px) {
+    padding: 0px;
+  }
+`;
+
+const Wrapper = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1350px;
+  padding: 40px 0px 0px 0px;
+  gap: 12px;
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+`;
+
+const Title = styled.div`
+  font-size: 42px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 20px;
+  color: ${({ theme }) => theme.text_primary};
+  @media (max-width: 768px) {
+    margin-top: 12px;
+    font-size: 32px;
+  }
+`;
+
+const Desc = styled.div`
+  font-size: 18px;
+  text-align: center;
+  max-width: 600px;
+  color: ${({ theme }) => theme.text_secondary};
+  @media (max-width: 768px) {
+    margin-top: 12px;
+    font-size: 16px;
+  }
+`;
+
+const ResumeWrapper = styled.div`
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Space between sections */
+`;
+
+const Section = styled.div`
+  margin-bottom: 20px;
+`;
+
+const SectionTitle = styled.h3`
+  font-size: 24px;
+  font-weight: 600;
+  color: ${({ theme }) => theme.text_primary};
+  margin-bottom: 12px;
+  border-bottom: 2px solid ${({ theme }) => theme.primary};
+  display: inline-block;
+  padding-bottom: 4px;
+`;
+
+const Item = styled.div`
+  margin-bottom: 15px;
+`;
+
+const HeaderRow = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: ${({ theme }) => theme.text_primary};
+  margin-bottom: 6px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+`;
+
+const ItemTitle = styled.span`
+  font-weight: 700;
+`;
+
+const ItemSubtitle = styled.span`
+  font-style: italic;
+  font-weight: 400;
+  color: ${({ theme }) => theme.text_secondary};
+`;
+
+const List = styled.ul`
+  margin-top: 6px;
+  padding-left: 20px;
+`;
+
+const ListItem = styled.li`
+  font-size: 15px;
+  color: ${({ theme }) => theme.text_secondary + 99};
+  margin-bottom: 4px;
+  line-height: 1.5;
+`;
 
 const Resume = () => {
     return (
-        <Container>
+        <Container id="resume">
             <Wrapper>
                 <Title>Resume</Title>
-                <SubTitle>My professional journey and skills</SubTitle>
-
-                <ResumeContainer>
-                    <Header>
-                        <ItemTitle>KEMBOI K. DAVID</ItemTitle>
-                        <ItemSubtitle>Data Analyst | Business Analyst | Cloud Data Analyst</ItemSubtitle>
-                        <ItemContent>📍 Westland, Nairobi | 📞 +254 724 006 182 | 📧 Dkemboi888@gmail.com</ItemContent>
-                        <ItemContent>
-                            <a href="https://www.linkedin.com/in/davidkemboi" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>🔗 LinkedIn</a> |
-                            <a href="https://davido200.github.io/David_Portfolio/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}> 🌐 Portfolio</a>
-                        </ItemContent>
-                    </Header>
-
-                    <Section>
-                        <SectionTitle>Professional Profile</SectionTitle>
-                        <ItemContent>
-                            Data Analyst with 3+ years of experience delivering end-to-end analytics solutions across healthcare, consulting, and public-sector environments. Strong background in Business Intelligence, Cloud Data Platforms, ETL pipelines, and dashboarding. Proven ability to transform raw data into actionable insights using SQL, Python, Power BI, Tableau, and AWS. Adept at data quality management, stakeholder collaboration, and building scalable analytics solutions that drive business and operational impact.
-                        </ItemContent>
-                    </Section>
-
-                    <Section>
-                        <SectionTitle>Core Competencies</SectionTitle>
-                        <SkillWrap>
-                            <Skill>Data Analysis & Statistical Modeling</Skill>
-                            <Skill>Business Intelligence & Dashboarding</Skill>
-                            <Skill>Cloud Data Analytics (AWS)</Skill>
-                            <Skill>ETL & Data Pipelines</Skill>
-                            <Skill>Data Quality, Validation & Governance</Skill>
-                            <Skill>Stakeholder Reporting & Decision Support</Skill>
-                        </SkillWrap>
-                    </Section>
-
-                    <Section>
-                        <SectionTitle>Technical Skills</SectionTitle>
-                        <List>
-                            <ListItem><strong>Data Analysis & Processing:</strong> Python (Pandas, NumPy), SQL, Excel</ListItem>
-                            <ListItem><strong>Visualization & BI:</strong> Power BI, Tableau, Excel</ListItem>
-                            <ListItem><strong>Databases:</strong> MySQL, PostgreSQL, SQL Server, Google BigQuery, AWS Aurora</ListItem>
-                            <ListItem><strong>Cloud & ETL:</strong> AWS (Glue, Data Pipeline), Airbyte</ListItem>
-                            <ListItem><strong>Programming & Web:</strong> Python, JavaScript, PHP, HTML</ListItem>
-                            <ListItem><strong>Version Control:</strong> Git</ListItem>
-                        </List>
-                    </Section>
-
+                <Desc>My Professional Journey and Education</Desc>
+                <ResumeWrapper>
                     <Section>
                         <SectionTitle>Professional Experience</SectionTitle>
-
-                        <Item>
-                            <HeaderRow>
-                                <ItemTitle>Sportserver — Junior Business Analyst</ItemTitle>
-                                <ItemSubtitle>Nairobi County | July 2025 – Present</ItemSubtitle>
-                            </HeaderRow>
-                            <List>
-                                <ListItem>Collaborate with Marketing, Business Intelligence, QA, Operations, and Product teams to gather, analyze, and document business and operational requirements across sportsbook platforms.</ListItem>
-                                <ListItem>Analyze large-scale games and player data using advanced SQL queries and BI tools (e.g., Looker Studio) to build dashboards tracking key KPIs such as Turnover, Gross Gaming Revenue (GGR), Net Revenue, Bonuses, and Player Activity.</ListItem>
-                                <ListItem>Translate complex analytical findings into clear, actionable insights for non-technical stakeholders through reports, dashboards, and presentations, enabling data-driven decision-making in sportsbook operations.</ListItem>
-                                <ListItem>Extract data from proprietary back-office and sportsbook platforms, applying data cleansing and transformation techniques including deduplication, null handling, schema normalization, and standardization.</ListItem>
-                                <ListItem>Conduct regular data quality audits on reporting outputs, identifying and resolving discrepancies in betting data (e.g., stakes, wins, losses, bonuses) to maintain high data accuracy and regulatory compliance.</ListItem>
-                                <ListItem>Work closely with QA teams to validate data consistency between front-end sportsbook systems and back-office reports, ensuring reliable KPI reporting for internal and external stakeholders.</ListItem>
-                                <ListItem>Document business processes, data definitions, KPIs, and reporting logic to improve transparency, consistency, and knowledge sharing across analytics and operations teams.</ListItem>
-                                <ListItem>Deliver ad-hoc analyses related to sportsbook performance, regulatory reporting, and operational investigations, providing timely insights under tight deadlines.</ListItem>
-                            </List>
-                        </Item>
-
-                        <Item>
-                            <HeaderRow>
-                                <ItemTitle>AMREF Kenya — Data Analyst</ItemTitle>
-                                <ItemSubtitle>Turkana County | Nov 2024 – May 2025</ItemSubtitle>
-                            </HeaderRow>
-                            <List>
-                                <ListItem>Delivered analytics insights that improved data-driven decision-making by 20% across health programs</ListItem>
-                                <ListItem>Implemented advanced data quality and validation checks, achieving 98% data accuracy</ListItem>
-                                <ListItem>Designed interactive Power BI dashboards to support program monitoring and executive reporting</ListItem>
-                                <ListItem>Built and optimized ETL pipelines, reducing data processing time by 50%</ListItem>
-                                <ListItem>Collaborated with healthcare professionals and policymakers to increase evidence-based strategy adoption</ListItem>
-                                <ListItem>Trained staff on analytics tools, improving organizational data literacy by 35%</ListItem>
-                            </List>
-                        </Item>
-
-                        <Item>
-                            <HeaderRow>
-                                <ItemTitle>Consultant — Data Analyst</ItemTitle>
-                                <ItemSubtitle>Nakuru County | Sep 2021 – Nov 2024</ItemSubtitle>
-                            </HeaderRow>
-                            <List>
-                                <ListItem>Automated data workflows, reducing manual reporting effort by 40%</ListItem>
-                                <ListItem>Cleaned, transformed, and standardized datasets, improving data consistency by 65%</ListItem>
-                                <ListItem>Developed BI dashboards in Tableau and Power BI for operational and management insights</ListItem>
-                                <ListItem>Ensured analytics-ready datasets through strong data governance and integrity practices</ListItem>
-                                <ListItem>Performed advanced analysis using SQL, Python (Pandas, NumPy)</ListItem>
-                                <ListItem>Produced executive-ready analytical reports supporting strategic business decisions</ListItem>
-                            </List>
-                        </Item>
-
-                        <Item>
-                            <HeaderRow>
-                                <ItemTitle>Murang’a County Health — Data Analyst (Attachment)</ItemTitle>
-                                <ItemSubtitle>Murang’a County | May 2019 – Apr 2020</ItemSubtitle>
-                            </HeaderRow>
-                            <List>
-                                <ListItem>Maintained 90%+ data accuracy through rigorous extraction and cleaning processes</ListItem>
-                                <ListItem>Built BI documentation, training materials, and reporting templates</ListItem>
-                                <ListItem>Analyzed large healthcare datasets to support hospital management decision-making</ListItem>
-                                <ListItem>Ensured consistency and reliability of hospital performance metrics</ListItem>
-                            </List>
-                        </Item>
+                        {experiences.map((experience) => (
+                            <Item key={experience.id}>
+                                <HeaderRow>
+                                    <ItemTitle>
+                                        {experience.company} — {experience.role}
+                                    </ItemTitle>
+                                    <ItemSubtitle>
+                                        {experience.location} | {experience.date}
+                                    </ItemSubtitle>
+                                </HeaderRow>
+                                <List>
+                                    {experience.desc.map((point, index) => (
+                                        <ListItem key={index}>{point}</ListItem>
+                                    ))}
+                                </List>
+                            </Item>
+                        ))}
                     </Section>
 
                     <Section>
                         <SectionTitle>Education</SectionTitle>
-                        <Item>
-                            <HeaderRow>
-                                <ItemTitle>Certificate in Data Analysis — Distinction</ItemTitle>
-                                <ItemSubtitle>Turing College, Lithuania | 2024</ItemSubtitle>
-                            </HeaderRow>
-                        </Item>
-                        <Item>
-                            <HeaderRow>
-                                <ItemTitle>Bachelor of Business Information Technology — Second Class Upper Division</ItemTitle>
-                                <ItemSubtitle>Mount Kenya University, Thika | 2020 – 2024</ItemSubtitle>
-                            </HeaderRow>
-                        </Item>
-                        <Item>
-                            <HeaderRow>
-                                <ItemTitle>Diploma in Business Information Technology — Credit</ItemTitle>
-                                <ItemSubtitle>Mount Kenya University, Thika | 2018 – 2019</ItemSubtitle>
-                            </HeaderRow>
-                        </Item>
+                        {education.map((edu) => (
+                            <Item key={edu.id}>
+                                <HeaderRow>
+                                    <ItemTitle>{edu.school} — {edu.degree}</ItemTitle>
+                                    <ItemSubtitle>{edu.date}</ItemSubtitle>
+                                </HeaderRow>
+                                <List>
+                                    <ListItem>Grade: {edu.grade}</ListItem>
+                                    <ListItem>{edu.desc}</ListItem>
+                                </List>
+                            </Item>
+                        ))}
                     </Section>
-
-                    <Section>
-                        <SectionTitle>Certifications</SectionTitle>
-                        <SkillWrap>
-                            <Skill>AWS Certified Cloud Practitioner</Skill>
-                            <Skill>SQL for Data Analysis</Skill>
-                            <Skill>Data Analytics</Skill>
-                            <Skill>Python Programmer Bootcamp</Skill>
-                            <Skill>Data Visualization Certification</Skill>
-                            <Skill>SQL + Tableau + Python Certification</Skill>
-                        </SkillWrap>
-                    </Section>
-                </ResumeContainer>
-
-                <br />
-                <DownloadButton href={Bio.resume} target="_blank">Download Resume</DownloadButton>
-
+                </ResumeWrapper>
             </Wrapper>
         </Container>
-    )
-}
+    );
+};
 
-export default Resume
+export default Resume;

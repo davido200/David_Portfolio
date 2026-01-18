@@ -24,7 +24,7 @@ const Description = styled.div`
     }
 `
 
-const Span = styled.span`
+const Span = styled.div`
 overflow: hidden;
 display: -webkit-box;
 max-width: 100%;
@@ -157,7 +157,17 @@ const ExperienceCard = ({ experience }) => {
             </Top>
             <Description>
                 {experience?.desc &&
-                    <Span>{experience?.desc}</Span>
+                    <Span>
+                        {Array.isArray(experience?.desc) ? (
+                            <ul style={{ paddingLeft: '20px', margin: 0 }}>
+                                {experience?.desc.map((item, index) => (
+                                    <li key={index}>{item}</li>
+                                ))}
+                            </ul>
+                        ) : (
+                            experience?.desc
+                        )}
+                    </Span>
 
                 }
                 {experience?.skills &&
