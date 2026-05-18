@@ -35,7 +35,7 @@ const HeroSection = () => {
                             ))}
                         </SpecialtyList>
                         <ButtonRow>
-                            <ResumeButton as={Link} to='/resume'>Download Resume</ResumeButton>
+                            <ResumeButton as={Link} to='/resume'>View Resume</ResumeButton>
                             <SecondaryButton href={Bio.github} target="_blank" rel="noreferrer">GitHub</SecondaryButton>
                             <SecondaryButton href={Bio.linkedin} target="_blank" rel="noreferrer">LinkedIn</SecondaryButton>
                             <SecondaryButton href="#contact">Contact Me</SecondaryButton>
