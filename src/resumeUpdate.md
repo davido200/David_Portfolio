@@ -1,87 +1,147 @@
-KEMBOI K. DAVID  
-DATA ANALYST|BUSSINESS ANALYST
-Milimani, Nakuru | +254 724 006 182, |Dkemboi888@gmail.com ,| Linkeld Profile
-   
-PROFESSIONAL SUMMARY
-Data and Business Analyst with 4+ years of experience designing and delivering analytics solutions across healthcare, consulting, and sportsbook environments. Experienced in data modeling, ETL pipelines, statistical analysis, and visualization using SQL, Python, Power BI, Tableau, and cloud platforms. Adept at transforming complex datasets into insights that drive operational efficiency, performance optimization, and strategic decision-making.
- 
-WORK EXPERIENCE  
- 
-DATA ANALYST |SPORTSERVE, Nairobi County                                                                     Jul-2025 – Present
-•	Collaborate with Marketing, Business Intelligence, QA, Operations, and Product teams to gather, analyze, and document business and operational requirements across sportsbook platforms.
-•	Analyze large-scale games and player data using advanced SQL queries and BI tools (e.g., Looker Studio) to build dashboards tracking key KPIs such as Turnover, Gross Gaming Revenue (GGR), Net Revenue, Bonuses, and Player Activity.
-•	Translate complex analytical findings into clear, actionable insights for non-technical stakeholders through reports, dashboards, and presentations, enabling data-driven decision-making in sportsbook operations.
-•	Extract data from proprietary back-office and sportsbook platforms, applying data cleansing and transformation techniques including deduplication, null handling, schema normalization, and standardization.
-•	Conduct regular data quality audits on reporting outputs, identifying and resolving discrepancies in betting data (e.g., stakes, wins, losses, bonuses) to maintain high data accuracy and regulatory compliance.
-•	Work closely with QA teams to validate data consistency between front-end sportsbook systems and back-office reports, ensuring reliable KPI reporting for internal and external stakeholders.
-•	Document business processes, data definitions, KPIs, and reporting logic to improve transparency, consistency, and knowledge sharing across analytics and operations teams.
-•	Deliver ad-hoc analyses related to sportsbook performance, regulatory reporting, and operational investigations, providing timely insights under tight deadlines.
+# KEMBOI K. DAVID
+## Data Analyst | Business Analyst | BI Analyst | Cloud Data Analyst
 
-DATA ANALYST |AMREF KENYA, Turkana County                                                                     Nov-2024 – Mar 2025
-•	Delivered actionable insights by conducting comprehensive analyses of health-related data, leading to a 13% improvement in data-driven decision-making within the HSS directorate and AMREF at large.
-•	Improved data integrity by implementing rigorous data quality assurance processes, cleaning techniques, and validation checks, achieving data accuracy rate and reducing data errors by 30%.
-•	Enhanced strategic planning by utilizing statistical modeling and forecasting to predict health system needs, optimize resource allocation, and project intervention outcomes, increasing resource efficiency by 25%.
-•	Facilitated data-driven decisions by creating interactive dashboards and compelling visualizations, improving stakeholder understanding and engagement.
-•	Strengthened collaboration by engaging with cross-functional teams - including healthcare professionals, donors, and policymakers - resulting in a 15% increase in the adoption of evidence-based strategies.
-•	Promoted a data-centric culture by providing technical support and training to AMREF staff, improving data proficiency by 35% across teams.
-•	Developed and maintained efficient data pipelines for extraction, transformation, and loading (ETL) processes, reducing data processing time by 50% and ensuring timely data availability for analysis.
+Westlands, Nairobi, Kenya  
+Phone: +254 724 006 182  
+Email: Dkemboi888@gmail.com  
+LinkedIn: https://www.linkedin.com/in/davidkemboi  
+Portfolio: https://davido200.github.io/David_Portfolio/  
+GitHub: https://github.com/davido200
 
-DATA ANALYST | CONSULTANT , Nakuru                                                           Sep 2023 – Nov 2024 
-•	Extracted, cleaned, and transformed data to enhance accuracy by 65% and reduce data inconsistencies.  
-•	Automation Tools Development: Design and develop automation tools to streamline day-to-day activities, enhancing efficiency in data-related processes 
-•	Developed and launched 10+ predictive models that accurately forecasted industry trends, increasing clients' proactive decision-making capability. 
-•	Data Availability and Data cleaning: Ensure required data for reporting is available in a format easily consumed by analytics, overseeing data accuracy and integrity. 
-•	Data Visualization - Developed and presented clear and insightful visual representations of data, enabling stakeholders to grasp complex information easily.
-•	Data Manipulation - Skilled in data manipulation using SQL, Pandas, and NumPy.
-•	Data Reporting -  Experienced in creating comprehensive data reports to support business decisions and provide actionable insights.
+---
 
-DATA ANALYST (Attachment) | MURANG'A COUNTY HEALTH                           05/2019 - 04/2020  
-•	Ensured 90% data accuracy and integrity through meticulous extraction techniques, positioning the hospital for precise data analysis.  
-•	Develop and maintain business intelligence documentation, training materials, best practices, and an overall data toolkit. 
-•	Consistency and Accuracy: Ensure consistency, accuracy, and overall integrity of hospital metrics through meticulous data management practices. 
-•	Derived meaningful insights from vast datasets, aiding hospital administrators in shaping strategic directions based on data analysis. 
+## Professional Summary
 
-EDUCATION  
-   
-Certificate in Data Analytics                                                                                       01/2024 - 12/2024  
-Turing College - Lithuania
-Grade: Distinction
+Data Analyst and Business Analyst with 4+ years of experience building dashboards, automating reports, validating data quality, and translating complex datasets into clear business insights. Skilled in SQL, Python, Power BI, Tableau, Looker Studio, BigQuery, and AWS. Experienced across healthcare, consulting, public-sector analytics, and sportsbook operations, with a strong focus on KPI reporting, ETL workflows, stakeholder communication, and data-driven decision support.
 
-Bachelor In Business Information Technology                                                       01/2020 - 08/2024  
-Mount Kenya University – Thika, Kenya
-Grade: Second Class upper Division 
+---
 
-Diploma in Business Information Technology                                                       01/2018 - 01/2019
-Mount Kenya University – Thika, Kenya
-Grade: Credit 
-   
-SKILLS
-Technical skills 
-•	Data Cleaning: Pandas, Numpy, Microsoft Excel, MySQL 
-•	A/B Testing & Statistical Analysis: Data Modeling, Machine Learning Algorithms, Statistics
-•	Data Visualization: Tableau, Microsoft Power BI, Microsoft Excel Excel, Looker Studio
-•	Databases & ETL : MySQL, PostgreSQL, SQL Server, Google Big Query, Oracle
-•	Big Data & Cloud: Google BigQuery, Cloud-based analytics AWS
-•	ETL & Data Cleaning: SQL, Python, Excel
-•	Languages: Python, HTML, PHP, Java script
-•	Version Control Git
-•	Microsoft Office
-•	Nvivo, KoBo, ODK
-Soft Skills
-•	Communication, Team Work, Problem solver, Honest, Team Management, Loyal
+## Core Skills
 
+- Data analysis, business intelligence, and stakeholder reporting
+- SQL querying, data extraction, data cleaning, and transformation
+- Power BI, Tableau, Looker Studio, Excel, and dashboard design
+- KPI reporting for revenue, operations, customer behavior, and performance tracking
+- Data quality audits, validation checks, deduplication, and schema normalization
+- ETL pipelines, workflow automation, and cloud data analytics
+- Statistical analysis, data modeling, and machine learning fundamentals
+- Requirements gathering, documentation, and cross-functional collaboration
 
-CERTIFICATIONS 
-•	SQL for Data Analysis - Linkeld Certification  , 365datascience Certification
-•	Data Analytics – LinkedIn Certification, 
-•	Python Programmer Bootcamp – Certification, 365Datascience, 
-•	Data Visualization – Certification
-•	Microsoft Excel Pivot tables - Certification
-•	SQL + Tableau + Python - Certification 
+---
 
-PROJECTS
-•	Machine learning Algorithm – Linear Regression 
-•	Health Centre Analysis -  Analysis - Pandas, Numpy
-•	Visualization – Call Centre Dashboard, Human resource Dashboard- PowerBi
-•	Data Cleaning – FIFA 21 Dataset – Data cleaning
-•	Customer Analysis -  Danny  restaurant - MSQL
+## Technical Skills
+
+**Analytics & Programming:** SQL, Python, Pandas, NumPy, Excel  
+**BI & Visualization:** Power BI, Tableau, Looker Studio, Excel Dashboards  
+**Databases & Warehousing:** MySQL, PostgreSQL, SQL Server, Google BigQuery, AWS Aurora  
+**Cloud & ETL:** AWS Glue, AWS Data Pipeline, Airbyte, ETL/ELT workflows  
+**Business Analysis:** Requirements gathering, KPI documentation, process mapping, reporting logic  
+**Development Tools:** Git, JavaScript, PHP, HTML
+
+---
+
+## Professional Experience
+
+### Sportserve
+**Data Analyst | Nairobi County | Jul 2025 - Present**
+
+- Collaborated with Marketing, Business Intelligence, QA, Operations, and Product teams to gather, analyze, and document business and operational requirements across sportsbook platforms.
+- Analyzed large-scale games and player data using SQL and BI tools, including Looker Studio, to track Turnover, Gross Gaming Revenue (GGR), Net Revenue, Bonuses, and Player Activity.
+- Built dashboards and reports that translated complex betting and player behavior data into clear insights for non-technical stakeholders.
+- Extracted data from back-office and sportsbook platforms, applying cleansing and transformation techniques such as deduplication, null handling, schema normalization, and standardization.
+- Conducted data quality audits on reporting outputs to identify discrepancies in stakes, wins, losses, bonuses, and revenue figures.
+- Worked with QA teams to validate consistency between front-end sportsbook systems and back-office reports, improving confidence in KPI reporting.
+- Documented business processes, KPI definitions, reporting rules, and data logic to improve analytics transparency and consistency.
+- Delivered ad-hoc analysis for sportsbook performance, operational investigations, and regulatory reporting under tight deadlines.
+
+---
+
+### AMREF Kenya
+**Data Analyst | Turkana County | Nov 2024 - May 2025**
+
+- Delivered analytics insights that improved data-driven decision-making by 20% across health programs.
+- Implemented data quality and validation checks, achieving 98% data accuracy across program datasets.
+- Designed interactive Power BI dashboards for program monitoring, performance tracking, and executive reporting.
+- Built and optimized ETL pipelines, reducing data processing time by 50%.
+- Collaborated with healthcare professionals and policymakers to increase evidence-based strategy adoption.
+- Trained staff on analytics tools and reporting processes, improving organizational data literacy by 35%.
+
+---
+
+### Consultant
+**Data Analyst | Nakuru County | Sep 2021 - Nov 2024**
+
+- Automated data workflows, reducing manual reporting effort by 40%.
+- Cleaned, transformed, and standardized datasets, improving data consistency by 65%.
+- Developed BI dashboards in Tableau and Power BI for operational and management reporting.
+- Performed advanced analysis using SQL, Python, Pandas, and NumPy to support business decisions.
+- Applied data governance and validation practices to ensure analytics-ready datasets.
+- Produced executive-ready reports and presentations for strategic decision-making.
+
+---
+
+### Murang'a County Health
+**Data Analyst Attachment | Murang'a County | May 2019 - Apr 2020**
+
+- Maintained 90%+ data accuracy through structured extraction, cleaning, and validation processes.
+- Analyzed healthcare datasets to support hospital performance monitoring and management decisions.
+- Built BI documentation, reporting templates, and training materials for recurring analytics workflows.
+- Improved consistency and reliability of hospital performance metrics through standardized reporting practices.
+
+---
+
+## Selected Projects
+
+### Betting KPI Dashboard
+- Built a sportsbook KPI reporting concept focused on GGR, NGR, Turnover, Bonuses, Player Activity, and operational performance.
+- Tools: SQL, Looker Studio, Excel, BI reporting logic.
+
+### Cohort Retention Analysis
+- Analyzed subscriber/player retention patterns to identify behavior trends and engagement drop-off points.
+- Tools: SQL, Google Sheets, cohort analysis.
+
+### Health Centre Data Analysis
+- Analyzed healthcare center performance, patient interactions, and financial indicators to support operational decision-making.
+- Tools: Python, Pandas, NumPy, data analysis.
+
+### Call Centre & HR Dashboard
+- Built dashboards to evaluate call center performance, HR metrics, and operational trends.
+- Tools: Power BI, Excel, data visualization.
+
+### House Price Prediction Model
+- Built a regression-based machine learning model to predict house prices using structured housing data.
+- Tools: Python, Scikit-learn, Pandas, regression modeling.
+
+### Restaurant Customer Behavior Analysis
+- Used SQL to analyze customer purchases, spending patterns, and menu preferences.
+- Tools: SQL Server, customer analytics.
+
+---
+
+## Education
+
+**Certificate in Data Analysis, Distinction**  
+Turing College, Lithuania | 2024
+
+**Bachelor of Business Information Technology, Second Class Upper Division**  
+Mount Kenya University, Thika | 2020 - 2024
+
+**Diploma in Business Information Technology, Credit**  
+Mount Kenya University, Thika | 2018 - 2019
+
+---
+
+## Certifications
+
+- AWS Certified Cloud Practitioner
+- SQL for Data Analysis - LinkedIn Learning, 365 Data Science
+- Data Analytics - LinkedIn Learning
+- Python Programmer Bootcamp - 365 Data Science
+- Data Visualization Certification
+- SQL + Tableau + Python Certification
+
+---
+
+## Target Roles
+
+Data Analyst, Business Intelligence Analyst, Business Analyst, Reporting Analyst, Cloud Data Analyst, Product/Data Operations Analyst.

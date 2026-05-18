@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import _default from '../../themes/default';
 
 export const Container = styled.div`
-    background: linear-gradient(343.07deg, rgba(132, 59, 206, 0.06) 5.71%, rgba(132, 59, 206, 0) 64.83%);
+    background: linear-gradient(343.07deg, rgba(132, 59, 206, 0.07) 5.71%, rgba(33, 150, 243, 0.04) 64.83%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,8 +49,20 @@ export const Desc = styled.div`
     }
 `;
 
+export const SectionLabel = styled.div`
+    width: 100%;
+    max-width: 1120px;
+    font-size: 22px;
+    font-weight: 700;
+    color: ${({ theme }) => theme.text_primary};
+    margin-top: 24px;
+    padding: 0 18px;
+`;
+
 export const ToggleButtonGroup = styled.div`
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     border: 1.5px solid ${({ theme }) => theme.primary};
     color: ${({ theme }) => theme.primary};
     font-size: 16px;
@@ -60,6 +71,7 @@ export const ToggleButtonGroup = styled.div`
     margin: 22px 0px;
     @media (max-width: 768px) {
         font-size: 12px;
+        margin: 18px 12px;
     }
 `
 
@@ -92,14 +104,39 @@ export const CardContainer = styled.div`
     align-items: center;
     gap: 28px;
     flex-wrap: wrap;
-    // display: grid;
-    // grid-template-columns: repeat(3, 1fr);
-    // grid-gap: 32px;
-    // grid-auto-rows: minmax(100px, auto);
-    // @media (max-width: 960px) {
-    //     grid-template-columns: repeat(2, 1fr);
-    // }
-    // @media (max-width: 640px) {
-    //     grid-template-columns: repeat(1, 1fr);
-    // }
+    width: 100%;
+    padding: 0 18px;
+`;
+
+export const StatsContainer = styled.div`
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    width: 100%;
+    max-width: 900px;
+    padding: 0 18px;
+    margin-top: 14px;
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+`;
+
+export const StatCard = styled.div`
+    background: ${({ theme }) => theme.card};
+    border: 1px solid ${({ theme }) => theme.text_secondary + 20};
+    border-radius: 8px;
+    padding: 18px;
+    text-align: center;
+`;
+
+export const StatValue = styled.div`
+    color: ${({ theme }) => theme.primary};
+    font-size: 24px;
+    font-weight: 800;
+`;
+
+export const StatLabel = styled.div`
+    color: ${({ theme }) => theme.text_secondary};
+    font-size: 14px;
+    margin-top: 6px;
 `;

@@ -58,11 +58,11 @@ const SkillsContainer = styled.div`
 
 const Skill = styled.div`
   width: 100%;
-  max-width: 500px;
+  max-width: 480px;
   background: ${({ theme }) => theme.card};
   border: 0.1px solid #854CE6;
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-  border-radius: 16px;
+  border-radius: 8px;
   padding: 18px 36px;
   @media (max-width: 768px) {
     max-width: 400px;
@@ -77,7 +77,7 @@ const Skill = styled.div`
 `
 
 const SkillTitle = styled.h2`
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 600;
   color: ${({ theme }) => theme.text_secondary};
   margin-bottom: 20px;
@@ -92,13 +92,27 @@ const SkillList = styled.div`
   margin-bottom: 20px;
 `
 
+const SkillGroup = styled.div`
+  width: 100%;
+  margin-bottom: 18px;
+`
+
+const SkillGroupTitle = styled.h3`
+  color: ${({ theme }) => theme.text_primary};
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  text-align: left;
+`
+
 const SkillItem = styled.div`
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   color: ${({ theme }) => theme.text_primary + 80};
-  border: 1px solid ${({ theme }) => theme.text_primary + 80};
-  border-radius: 12px;
-  padding: 12px 16px;
+  border: 1px solid ${({ theme }) => theme.primary + 55};
+  background: ${({ theme }) => theme.bgLight};
+  border-radius: 999px;
+  padding: 10px 14px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,20 +138,36 @@ const Skills = () => {
     <Container id="skills">
       <Wrapper>
         <Title>Skills</Title>
-        <Desc>Here are some of my skills on which I have been working on for the past 4 years.
+        <Desc>Core tools and workflows I use for analytics, BI dashboards, data engineering, machine learning, and frontend delivery.
         </Desc>
         <SkillsContainer>
           {skills.map((skill) => (
-            <Skill>
+            <Skill key={skill.title}>
               <SkillTitle>{skill.title}</SkillTitle>
-              <SkillList>
-                {skill.skills.map((item) => (
-                  <SkillItem>
-                    <SkillImage src={item.image}/>
-                    {item.name}
-                  </SkillItem>
-                ))}
-              </SkillList>
+              {skill.groups ? (
+                skill.groups.map((group) => (
+                  <SkillGroup key={`${skill.title}-${group.title}`}>
+                    <SkillGroupTitle>{group.title}</SkillGroupTitle>
+                    <SkillList>
+                      {group.skills.map((item) => (
+                        <SkillItem key={`${group.title}-${item.name}`}>
+                          {item.image && <SkillImage src={item.image} alt="" />}
+                          {item.name}
+                        </SkillItem>
+                      ))}
+                    </SkillList>
+                  </SkillGroup>
+                ))
+              ) : (
+                <SkillList>
+                  {skill.skills.map((item) => (
+                    <SkillItem key={`${skill.title}-${item.name}`}>
+                      {item.image && <SkillImage src={item.image} alt="" />}
+                      {item.name}
+                    </SkillItem>
+                  ))}
+                </SkillList>
+              )}
             </Skill>
           ))}
 

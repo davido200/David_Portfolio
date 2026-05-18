@@ -2,48 +2,50 @@ import React from 'react'
 import styled from 'styled-components'
 
 
-const Button = styled.button`
-    display: none;
+const Button = styled.a`
     width: 100%;
-    padding: 10px;
-    background-color: ${({ theme }) => theme.white};
-    color: ${({ theme }) => theme.text_black};
+    padding: 11px 12px;
+    background-color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.white};
     font-size: 14px;
     font-weight: 700;
-    border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: all 0.8s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        filter: brightness(1.12);
+        transform: translateY(-1px);
+    }
 `
 const Card = styled.div`
     width: 330px;
-    height: 490px;
+    min-height: 520px;
     background-color: ${({ theme }) => theme.card};
     cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 0 0 12px 4px rgba(0,0,0,0.4);
+    border-radius: 8px;
+    border: 1px solid ${({ theme, featured }) => featured ? theme.primary : theme.text_secondary + 20};
+    box-shadow: 0 14px 34px rgba(0,0,0,0.28);
     overflow: hidden;
-    padding: 26px 20px;
+    padding: 18px;
     display: flex;
     flex-direction: column;
     gap: 14px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.25s ease-in-out;
     &:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 0 50px 4px rgba(0,0,0,0.6);
-        filter: brightness(1.1);
-    }
-    &:hover ${Button} {
-        display: block;
+        transform: translateY(-6px);
+        box-shadow: 0 18px 44px rgba(0,0,0,0.42);
     }
 `
 
 const Image = styled.img`
     width: 100%;
     height: 180px;
+    object-fit: cover;
     background-color: ${({ theme }) => theme.white};
-    border-radius: 10px;
-    box-shadow: 0 0 16px 2px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.26);
 `
 
 const Tags = styled.div`
@@ -57,11 +59,11 @@ const Tags = styled.div`
 
 const Tag = styled.span`
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 600;
     color: ${({ theme }) => theme.primary};
     background-color: ${({ theme }) => theme.primary + 15};
-    padding: 2px 8px;
-    border-radius: 10px;
+    padding: 4px 8px;
+    border-radius: 999px;
 `
 
 const Details = styled.div`
@@ -107,28 +109,28 @@ const Description = styled.div`
     text-overflow: ellipsis;
 `
 
-const Members = styled.div`
+const Metrics = styled.div`
     display: flex;
-    align-items: center;
-    padding-left: 10px;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: auto;
 `
-const Avatar = styled.img`
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    margin-left: -10px;
-    background-color: ${({ theme }) => theme.white};
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    border: 3px solid ${({ theme }) => theme.card};
+const Metric = styled.div`
+    font-size: 12px;
+    color: ${({ theme }) => theme.text_secondary};
+    background: ${({ theme }) => theme.bgLight};
+    border: 1px solid ${({ theme }) => theme.text_secondary + 20};
+    border-radius: 8px;
+    padding: 7px 9px;
 `
 
 const ProjectCards = ({project,setOpenModal}) => {
     return (
-        <Card onClick={() => setOpenModal({state: true, project: project})}>
-            <Image src={project.image}/>
+        <Card featured={project.featured} onClick={() => setOpenModal({state: true, project: project})}>
+            <Image src={project.image} alt={project.title} loading="lazy"/>
             <Tags>
                 {project.tags?.map((tag, index) => (
-                <Tag>{tag}</Tag>
+                <Tag key={`${project.id}-${tag}-${index}`}>{tag}</Tag>
                 ))}
             </Tags>
             <Details>
@@ -136,12 +138,19 @@ const ProjectCards = ({project,setOpenModal}) => {
                 <Date>{project.date}</Date>
                 <Description>{project.description}</Description>
             </Details>
-            <Members>
-                {project.member?.map((member) => (
-                    <Avatar src={member.img}/>
+            <Metrics>
+                {project.metrics?.slice(0, 3).map((metric, index) => (
+                    <Metric key={`${project.id}-metric-${index}`}>{metric}</Metric>
                 ))}
-            </Members>
-            {/* <Button>View Project</Button> */}
+            </Metrics>
+            <Button
+                href={project.github}
+                target="_blank"
+                rel="noreferrer"
+                onClick={(event) => event.stopPropagation()}
+            >
+                View Project Code
+            </Button>
         </Card>
     )
 }

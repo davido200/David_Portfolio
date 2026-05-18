@@ -1,12 +1,11 @@
 import styled from "styled-components";
-import _default from "../../themes/default";
 
 export const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
   display: flex;
   justify-content: center;
   position: relative;
-  padding: 80px 30px;
+  padding: 96px 30px 80px;
   @media (max-width: 960px) {
     padding: 66px 16px;
   }
@@ -114,9 +113,9 @@ export const Img = styled.img`
 
 export const Title = styled.div`
   font-weight: 700;
-  font-size: 50px;
+  font-size: 48px;
   color: ${({ theme }) => theme.text_primary};
-  line-height: 68px;
+  line-height: 60px;
   @media (max-width: 960px) {
     text-align: center;
   }
@@ -130,7 +129,7 @@ export const Title = styled.div`
 
 export const TextLoop = styled.div`
   font-weight: 600;
-  font-size: 32px;
+  font-size: 26px;
   display: flex;
   gap: 12px;
   color: ${({ theme }) => theme.text_primary};
@@ -153,7 +152,7 @@ export const Span = styled.span`
 export const SubTitle = styled.div`
   font-size: 20px;
   line-height: 32px;
-  margin-bottom: 42px;
+  margin-bottom: 24px;
   color: ${({ theme }) => theme.text_primary + 95};
 
   @media (max-width: 960px) {
@@ -166,38 +165,71 @@ export const SubTitle = styled.div`
   }
 `;
 
+export const SpecialtyList = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+  @media (max-width: 960px) {
+    justify-content: center;
+  }
+`;
+
+export const Specialty = styled.span`
+  color: ${({ theme }) => theme.text_secondary};
+  background: ${({ theme }) => theme.bgLight};
+  border: 1px solid ${({ theme }) => theme.primary + 55};
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 600;
+`;
+
+export const ButtonRow = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  @media (max-width: 960px) {
+    justify-content: center;
+  }
+`;
+
 export const ResumeButton = styled.a`
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
     text-decoration: none;
-    width: 95%;
-    max-width: 300px;
+    min-width: 150px;
     text-align: center;
-    padding: 16px 0;
+    padding: 13px 18px;
     color:${({ theme }) => theme.white};
-    border-radius: 20px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     transition: all 0.2s ease-in-out !important;
     background: hsla(271, 100%, 50%, 1);
     background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
     background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
     background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    box-shadow:  20px 20px 60px #1F2634,
-    -20px -20px 60px #1F2634;
+    box-shadow: 0 12px 28px rgba(132, 76, 230, 0.25);
     &:hover {
         transform: scale(1.05);
     transition: all 0.4s ease-in-out;
-    box-shadow:  20px 20px 60px #1F2634,
-    filter: brightness(1);
+    filter: brightness(1.08);
     }    
     
     
     @media (max-width: 640px) {
         padding: 12px 0;
-        font-size: 18px;
+        font-size: 14px;
     } 
 
+`;
+
+export const SecondaryButton = styled(ResumeButton)`
+    background: transparent;
+    border: 1px solid ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.text_primary};
+    box-shadow: none;
 `;

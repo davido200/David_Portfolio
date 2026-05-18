@@ -73,6 +73,52 @@ const Image = styled.img`
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
 `;
 
+const Metrics = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 8px 6px 16px;
+`;
+
+const Metric = styled.div`
+    font-size: 13px;
+    color: ${({ theme }) => theme.text_secondary};
+    background: ${({ theme }) => theme.bgLight};
+    border: 1px solid ${({ theme }) => theme.text_secondary + 20};
+    border-radius: 8px;
+    padding: 8px 10px;
+`;
+
+const CaseGrid = styled.div`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 10px 6px 18px;
+    @media only screen and (max-width: 700px) {
+        grid-template-columns: 1fr;
+    }
+`;
+
+const CaseItem = styled.div`
+    background: ${({ theme }) => theme.bgLight};
+    border: 1px solid ${({ theme }) => theme.text_secondary + 20};
+    border-radius: 8px;
+    padding: 12px;
+`;
+
+const CaseTitle = styled.div`
+    font-size: 14px;
+    font-weight: 700;
+    color: ${({ theme }) => theme.primary};
+    margin-bottom: 6px;
+`;
+
+const CaseText = styled.div`
+    font-size: 14px;
+    line-height: 22px;
+    color: ${({ theme }) => theme.text_secondary};
+`;
+
 const Label = styled.div`
     font-size: 20px;
     font-weight: 600;
@@ -197,21 +243,44 @@ const index = ({ openModal, setOpenModal }) => {
                         }}
                         onClick={() => setOpenModal({ state: false, project: null })}
                     />
-                    <Image src={project?.image} />
+                    <Image src={project?.image} alt={project?.title} loading="lazy" />
                     <Title>{project?.title}</Title>
                     <Date>{project.date}</Date>
                     <Tags>
-                        {project?.tags.map((tag) => (
-                            <Tag>{tag}</Tag>
+                        {project?.tags.map((tag, index) => (
+                            <Tag key={`${project.id}-tag-${index}`}>{tag}</Tag>
                         ))}
                     </Tags>
                     <Desc>{project?.description}</Desc>
+                    {project?.metrics && (
+                        <Metrics>
+                            {project.metrics.map((metric, index) => (
+                                <Metric key={`${project.id}-metric-${index}`}>{metric}</Metric>
+                            ))}
+                        </Metrics>
+                    )}
+                    {(project?.challenge || project?.solution || project?.result) && (
+                        <CaseGrid>
+                            <CaseItem>
+                                <CaseTitle>Challenge</CaseTitle>
+                                <CaseText>{project.challenge}</CaseText>
+                            </CaseItem>
+                            <CaseItem>
+                                <CaseTitle>Solution</CaseTitle>
+                                <CaseText>{project.solution}</CaseText>
+                            </CaseItem>
+                            <CaseItem>
+                                <CaseTitle>Result</CaseTitle>
+                                <CaseText>{project.result}</CaseText>
+                            </CaseItem>
+                        </CaseGrid>
+                    )}
                     {project.member && (
                         <>
                             <Label>Members</Label>
                             <Members>
                                 {project?.member.map((member) => (
-                                    <Member>
+                                    <Member key={member.name}>
                                         <MemberImage src={member.img} />
                                         <MemberName>{member.name}</MemberName>
                                         <a href={member.github} target="new" style={{textDecoration: 'none', color: 'inherit'}}>
@@ -226,8 +295,7 @@ const index = ({ openModal, setOpenModal }) => {
                         </>
                     )}
                     <ButtonGroup>
-                        <Button dull href={project?.github} target='new'>View Code</Button>
-                        <Button href={project?.webapp} target='new'>View Live App</Button>
+                        <Button href={project?.github} target='_blank' rel="noreferrer">View Project Code</Button>
                     </ButtonGroup>
                 </Wrapper>
             </Container>
